@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/cssreset.css" rel="stylesheet" type="text/css" />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="" id="forcastTab">Forcast</a>
+        <a href="" id="aboutTab">About</a>
+    </div>
+    <div class='container'>
+        <!-- <input id='input' type="text" placeholder="Enter a location" required/> -->
+        <select id='selectCity'>
+            <option value="" disabled selected value>Select City</option>
+            <option value="cape town">Cape Town</option>
+            <option value="johannesburg">Johannesburg</option>
+            <option value="durban">Durban</option>
+        </select>
+        <select id='select'>
+            <option value="metric">°C</option>
+            <option value="imperial">°F</option>
+        </select>
+    </div>
+    <div class='container'>
+        <div class="container-box">
+            <h1>Today's Weather</h1>
+            <div class='time'>
+            </div>
+            <div class="line-break"></div>
+            <h1 id='heading'></h1>
+            <h1 id='temp'></h1>
+            <h2 id='summary'></h2>
+            <h3 id='wind'></h3>
+            <h3 id='humidity'></h3>
+            <div class="top">
+                <h3 id='sunrise'></h3>
+                <h3 id='sunset'></h3>
+            </div>
+            <div class="bottom">
+                <h3 id='min'></h3>
+                <h3 id='max'></h3>
+            </div>
+        </div>
+    </div>
+    <div class='container'>
+        <div class="container-box-forcast">
+            <div id='forcast'></div>
+        </div>
+    </div>
+    <!-- <script>
+        function activatePlacesSearch() {
+            var input = document.getElementById('input');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+        }
+    </script> -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=' '&libraries=places&callback=activatePlacesSearch"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
